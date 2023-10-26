@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Generador de Contraseña</header>
+    <main>
+        <div class="form__group">
+            <input type="number" class="form__field" placeholder="" name="length" id="length" required />
+            <label for="length" class="form__label">Ingrese la cantidad de caracteres</label>
+        </div>
+        <div>
+            <input type="checkbox" name="option1" value="letters" class="opciones" id="letters"> <label for="letters" class="opciones-label">Letras (Aa-Zz)</label> <br>
+            <input type="checkbox" name="option2" value="numbers" class="opciones" id="numbers"> <label for="numbers" class="opciones-label">Números</label> <br>
+
+            <div class="container">
+                <button id="generatePassword">
+                    <span>Generar Contraseña</span>
+                </button> 
+            </div>
+        </div>
+        <div class="generated-password">
+            <label for="password" class="form__label">Contraseña generada:</label>
+            <input type="text" class="form__field" id="password" readonly />
+        </div>
+    </main>
+    <script src="ejec.js"></script>
+</body>
+</html>
